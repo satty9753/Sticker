@@ -25,7 +25,11 @@ class StickerImageView:UIImageView, UIGestureRecognizerDelegate{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        configure()
+     
+    }
+    
+    func configure(){
         self.contentMode = .scaleAspectFill
         
         //set UIGeatureRecognizer for scale and rotation
@@ -41,7 +45,6 @@ class StickerImageView:UIImageView, UIGestureRecognizerDelegate{
         
         startEditing()
     }
-    
     
     private func addBorders(){
         let borderHeight:CGFloat = 2.0
@@ -87,7 +90,7 @@ class StickerImageView:UIImageView, UIGestureRecognizerDelegate{
     func stopEditing(){
         self.isUserInteractionEnabled = false
         
-         borders.forEach{ $0.isHidden = true }
+        borders.forEach{ $0.isHidden = true }
     }
     
     @objc func zoomIn(sender: UIPinchGestureRecognizer) {

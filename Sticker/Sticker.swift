@@ -18,13 +18,23 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
     
     fileprivate var span: CGFloat = 18.0
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
         
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
+    func configure(){
         //set stickerImageView
         stickerImageView = StickerImageView(frame: CGRect(x: self.frame.origin.x + span/2, y: self.frame.origin.y + span/2, width: self.frame.width - span, height: self.frame.height - span))
-        stickerImageView.center = center
         stickerImageView.stickerDelegate = self
+        stickerImageView.center = center
         self.addSubview(stickerImageView)
         
         //set UIGeatureRecognizer for translation
@@ -32,25 +42,21 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
         pan.delegate = self
         self.addGestureRecognizer(pan)
         
-        let space = span / 2
-        addDeleteButton(point:CGPoint(x: self.frame.width-space-deleteButtonRadius, y: deleteButtonRadius/2-space))
+        addDeleteButton(point:CGPoint(x: stickerImageView.frame.origin.x + stickerImageView.frame.width-deleteButtonRadius, y: stickerImageView.frame.origin.y-deleteButtonRadius))
+        
+        self.startEditing()
         
         addToScreen()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
-
-    
-    func startEditing(){
+    public func startEditing(){
         self.isUserInteractionEnabled = true
         deleteButton.isHidden = false
         stickerImageView.startEditing()
     }
     
-    func stopEditing(){
+    public func stopEditing(){
         self.isUserInteractionEnabled = false
         deleteButton.isHidden = true
         stickerImageView.stopEditing()
@@ -64,21 +70,26 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
         }
     }
     
-    func setImage(_ image:UIImage?){
+    public func setImage(_ image:UIImage?){
         stickerImageView.image = image
     }
 
+    public func setDeleteButtonImage(_ image:UIImage?){
+        deleteButton.setImage(image, for: .normal)
+    }
+    
+    public func setBorderWidth(_ length: CGFloat){
+        stickerImageView.setBorderWidth(length: length)
+    }
+    
     
     func addDeleteButton(point:CGPoint){
         deleteButton = UIButton(frame: CGRect(origin: point, size: CGSize(width: deleteButtonRadius*2, height: deleteButtonRadius*2)))
         deleteButton.backgroundColor = .clear
-        deleteButton.setImage(UIImage(named: "delete_sticker"), for: .normal)
+        deleteButton.setImage(UIImage(named: "delete_button"), for: .normal)
         deleteButton.addTarget(self, action: #selector(removeFromSuperview), for: .touchUpInside)
         deleteButton.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
         self.addSubview(self.deleteButton)
-
-        
-        
     }
     
     //animate to show adding new sticker
