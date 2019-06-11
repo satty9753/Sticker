@@ -1,0 +1,19 @@
+{
+  "name": "Sticker",
+  "version": "1.0.0",
+  "summary": "A sticker can be scaled, moved and rotated.",
+  "description": "A sticker can be scaled, moved and rotated.",
+  "homepage": "https://github.com/satty9753/Sticker",
+  "license": "MIT",
+  "authors": {
+    "Michelle Chen": "michelle.chen@iit.com.hk"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Sticker",
+  "exclude_files": "Classes/Exclude"
+}

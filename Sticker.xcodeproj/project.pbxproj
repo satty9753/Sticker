@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B233566C0CAD8CDB2E9E3B /* Pods_Sticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25451D76E983C8C82F23C0DC /* Pods_Sticker.framework */; };
 		322EB71E22AE02A3007DE1A8 /* Sticker.h in Headers */ = {isa = PBXBuildFile; fileRef = 322EB71C22AE02A3007DE1A8 /* Sticker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		322EB72722AE02B0007DE1A8 /* StickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EB72422AE02AF007DE1A8 /* StickerImageView.swift */; };
 		322EB72822AE02B0007DE1A8 /* UIView+TransformCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EB72522AE02AF007DE1A8 /* UIView+TransformCoordination.swift */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25451D76E983C8C82F23C0DC /* Pods_Sticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		322EB71922AE02A3007DE1A8 /* Sticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		322EB71C22AE02A3007DE1A8 /* Sticker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sticker.h; sourceTree = "<group>"; };
 		322EB71D22AE02A3007DE1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322EB72422AE02AF007DE1A8 /* StickerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerImageView.swift; sourceTree = "<group>"; };
 		322EB72522AE02AF007DE1A8 /* UIView+TransformCoordination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TransformCoordination.swift"; sourceTree = "<group>"; };
 		322EB72622AE02AF007DE1A8 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		8C637054AB079FFAE9CB0181 /* Pods-Sticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sticker/Pods-Sticker.debug.xcconfig"; sourceTree = "<group>"; };
+		D64F8E0FF0FFE4F13339DF65 /* Pods-Sticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sticker/Pods-Sticker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B233566C0CAD8CDB2E9E3B /* Pods_Sticker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				322EB71B22AE02A3007DE1A8 /* Sticker */,
 				322EB71A22AE02A3007DE1A8 /* Products */,
+				76B56191BA6937C6AEBA5FDD /* Pods */,
+				3C00C91D13B5F6C57214582D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,23 @@
 			path = Sticker;
 			sourceTree = "<group>";
 		};
+		3C00C91D13B5F6C57214582D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25451D76E983C8C82F23C0DC /* Pods_Sticker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76B56191BA6937C6AEBA5FDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C637054AB079FFAE9CB0181 /* Pods-Sticker.debug.xcconfig */,
+				D64F8E0FF0FFE4F13339DF65 /* Pods-Sticker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -79,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 322EB72122AE02A3007DE1A8 /* Build configuration list for PBXNativeTarget "Sticker" */;
 			buildPhases = (
+				6F93FD68B8E4A140BF7B333F /* [CP] Check Pods Manifest.lock */,
 				322EB71422AE02A3007DE1A8 /* Headers */,
 				322EB71522AE02A3007DE1A8 /* Sources */,
 				322EB71622AE02A3007DE1A8 /* Frameworks */,
@@ -134,6 +159,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F93FD68B8E4A140BF7B333F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sticker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		322EB71522AE02A3007DE1A8 /* Sources */ = {
@@ -273,6 +319,7 @@
 		};
 		322EB72222AE02A3007DE1A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C637054AB079FFAE9CB0181 /* Pods-Sticker.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -301,6 +348,7 @@
 		};
 		322EB72322AE02A3007DE1A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64F8E0FF0FFE4F13339DF65 /* Pods-Sticker.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

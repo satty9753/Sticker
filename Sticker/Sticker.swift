@@ -14,7 +14,7 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
 
     fileprivate var deleteButton: UIButton!
     
-    fileprivate var deleteButtonRadius: CGFloat = 14.0
+    fileprivate var deleteButtonRadius: CGFloat = 15.0
     
     fileprivate var span: CGFloat = 18.0
     
