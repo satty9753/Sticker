@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "A sticker can be scaled, moved and rotated."
+  s.description  = "A sticker can be added on your UIviews. You can scale, move sround and rotate the sticker. 
+
+  It can also be deleted by clicking the button on the right angle."
 
   s.homepage     = "https://github.com/satty9753/Sticker"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => 'https://github.com/satty9753/Sticker', :tag => "1.0.0"}
+  s.source       = { :git => 'https://github.com/satty9753/Sticker.git', :tag => "1.0.0"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,6 +94,7 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.source_files  = "Sticker"
   s.exclude_files = "Classes/Exclude"
+  s.swift_version = '4.2'
 
   # s.public_header_files = "Classes/**/*.h"
 
