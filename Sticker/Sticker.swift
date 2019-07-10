@@ -29,8 +29,7 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
     }
     
     
-    
-    func configure(){
+    private func configure(){
         //set stickerImageView
         stickerImageView = StickerImageView(frame: CGRect(x: self.frame.origin.x + span/2, y: self.frame.origin.y + span/2, width: self.frame.width - span, height: self.frame.height - span))
         stickerImageView.stickerDelegate = self
@@ -83,7 +82,7 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
     }
     
     
-    func addDeleteButton(point:CGPoint){
+    private func addDeleteButton(point:CGPoint){
         deleteButton = UIButton(frame: CGRect(origin: point, size: CGSize(width: deleteButtonRadius*2, height: deleteButtonRadius*2)))
         deleteButton.backgroundColor = .clear
         deleteButton.setImage(UIImage(named: "delete_button"), for: .normal)
@@ -93,7 +92,7 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
     }
     
     //animate to show adding new sticker
-    func addToScreen(){
+    private func addToScreen(){
         UIView.animate(withDuration: 0.2, animations: {
             self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
         }, completion: { _ in
@@ -110,7 +109,9 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
 //MARK: - StickerDelegate
 extension Sticker: StickerDelegate{
     func getDeleteButton(point: CGPoint) {
-        addDeleteButton(point: CGPoint(x: point.x - deleteButtonRadius, y: point.y - deleteButtonRadius))
+        if !self.subviews.contains(deleteButton){
+            addDeleteButton(point: CGPoint(x: point.x - deleteButtonRadius, y: point.y - deleteButtonRadius))
+        }
     }
     
     func getFrame(frame: CGRect) {
