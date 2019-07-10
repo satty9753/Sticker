@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Sticker"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "A sticker can be scaled, moved and rotated."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => 'https://github.com/satty9753/Sticker.git', :tag => "1.0.0"}
+  s.source       = { :git => 'https://github.com/satty9753/Sticker.git', :tag => "1.0.3"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
