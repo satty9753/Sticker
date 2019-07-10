@@ -12,6 +12,7 @@
 		322EB72722AE02B0007DE1A8 /* StickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EB72422AE02AF007DE1A8 /* StickerImageView.swift */; };
 		322EB72822AE02B0007DE1A8 /* UIView+TransformCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EB72522AE02AF007DE1A8 /* UIView+TransformCoordination.swift */; };
 		322EB72922AE02B0007DE1A8 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EB72622AE02AF007DE1A8 /* Sticker.swift */; };
+		32382E8222D5D52600C6AA67 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32382E8122D5D52600C6AA67 /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		322EB72422AE02AF007DE1A8 /* StickerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerImageView.swift; sourceTree = "<group>"; };
 		322EB72522AE02AF007DE1A8 /* UIView+TransformCoordination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TransformCoordination.swift"; sourceTree = "<group>"; };
 		322EB72622AE02AF007DE1A8 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		32382E8122D5D52600C6AA67 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		8C637054AB079FFAE9CB0181 /* Pods-Sticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sticker/Pods-Sticker.debug.xcconfig"; sourceTree = "<group>"; };
 		D64F8E0FF0FFE4F13339DF65 /* Pods-Sticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sticker/Pods-Sticker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 				322EB72622AE02AF007DE1A8 /* Sticker.swift */,
 				322EB72422AE02AF007DE1A8 /* StickerImageView.swift */,
 				322EB72522AE02AF007DE1A8 /* UIView+TransformCoordination.swift */,
+				32382E8122D5D52600C6AA67 /* images.xcassets */,
 			);
 			path = Sticker;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32382E8222D5D52600C6AA67 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
