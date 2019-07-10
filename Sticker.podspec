@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Sticker"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A sticker can be scaled, moved and rotated."
 
   # This description is used to generate tags and improve search results.
