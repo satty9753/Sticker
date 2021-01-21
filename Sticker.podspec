@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Sticker"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A sticker can be scaled, moved and rotated."
 
   # This description is used to generate tags and improve search results.
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Michelle Chen" => "michelle.chen@iit.com.hk" }
+  s.author             = { "Michelle Chen" => "satty9753@gmail.com" }
   # Or just: s.author    = "Michelle Chen"
   # s.authors            = { "Michelle Chen" => "michelle.chen@iit.com.hk" }
   # s.social_media_url   = "http://twitter.com/Michelle Chen"
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "13.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => 'https://github.com/satty9753/Sticker.git', :tag => "1.0.3"}
+  s.source       = { :git => 'https://github.com/satty9753/Sticker.git', :tag => "1.0.4"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -95,7 +95,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Sticker"
   s.exclude_files = "Classes/Exclude"
   s.swift_version = '4.2'
-
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -107,8 +106,10 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  # s.resource  = "delete_btn.png"
+   s.resources = ["Sticker/*.xcassets"]
+   
+  # s.resources = "Sticker/Assets/*.xcassets"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

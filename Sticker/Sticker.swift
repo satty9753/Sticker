@@ -85,7 +85,9 @@ public class Sticker: UIView, UIGestureRecognizerDelegate {
     private func addDeleteButton(point:CGPoint){
         deleteButton = UIButton(frame: CGRect(origin: point, size: CGSize(width: deleteButtonRadius*2, height: deleteButtonRadius*2)))
         deleteButton.backgroundColor = .clear
-        deleteButton.setImage(UIImage(named: "delete_button"), for: .normal)
+        let bundle = Bundle(for: self.classForCoder)
+        deleteButton.setImage(UIImage(named: "delete_demo", in: bundle, with: nil), for: .normal)
+        
         deleteButton.addTarget(self, action: #selector(removeFromSuperview), for: .touchUpInside)
         deleteButton.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
         self.addSubview(self.deleteButton)

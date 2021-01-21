@@ -12,6 +12,7 @@ protocol StickerDelegate{
 }
 
 import Foundation
+import UIKit
 
 class StickerImageView:UIImageView, UIGestureRecognizerDelegate{
     private var topBorder: UIView!

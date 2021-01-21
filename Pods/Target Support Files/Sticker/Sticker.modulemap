@@ -1,6 +1,0 @@
-framework module Sticker {
-  umbrella header "Sticker-umbrella.h"
-
-  export *
-  module * { export * }
-}
