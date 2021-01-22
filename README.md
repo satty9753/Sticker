@@ -6,7 +6,7 @@ pod 'Sticker'
 ```
 
 ## Demo
-<img src="https://github.com/satty9753/Sticker/blob/master/demo_images/demo1.PNG?raw=true"  alt="sticker_demo" width="300">
+<!-- <img src="https://github.com/satty9753/Sticker/blob/master/demo_images/demo1.PNG?raw=true"  alt="sticker_demo" width="300"> -->
 
 ## Usage
 ```swift
@@ -28,4 +28,16 @@ pod 'Sticker'
     
 }
 
+```
+
+### enter editing mode
+```swift
+//move around, scale, and delete it as you like!
+sticker.startEditing()
+```
+
+### end editing mode
+```swift
+//hide border & fix position
+sticker.stopEditing()
 ```
